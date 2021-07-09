@@ -52,7 +52,7 @@ function getWeather(latitude, longitude) {
             //extract weather data
             weather.temperature.value = Math.floor(weatherData.main.temp - unitKelvin);
             weather.description = weatherData.weather[0].description;
-            weather.iconId = weatherData.weather[0].icon;
+            weather.iconId = weatherData.weather[0].icon; //Icon names match this value
             weather.city = weatherData.name;
             weather.country = weatherData.sys.country;
         })
@@ -84,7 +84,7 @@ temperatureElement.addEventListener("click", function() {
         let fahrenheit = celsiusToFahrenheit(weather.temperature.value);
         fahrenheit = Math.floor(fahrenheit);
         //Set element
-        temperatureElement.innerHTML = `${fahrenheit}°<span>C</span>`;
+        temperatureElement.innerHTML = `${fahrenheit}°<span>F</span>`;
         //Change unit
         weather.temperature.unit = "fahrenheit";
     } else {
