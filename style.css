@@ -1,0 +1,26 @@
+body {
+    background-color: #ade4a7;
+    display: grid;
+    place-items: center;
+}
+.container {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px; /* 20px rounded corners */
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+    box-sizing: content-box;
+    width: 200px;
+    height: auto;
+
+}
+/* On mouse-over, add a deeper shadow */
+.container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .container .app-title .p {
+      align-content: center;
+  }
